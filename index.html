@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-list-Advanced</title>
+    <!-- Importing the css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importing the sources -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <!-- Importing CDN the Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Importing the js -->
+    <!-- O atributo defer diz ao navegador para executar o script apenas quando a análise do HTML estiver finalizada. -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="--container">
+        <header>
+            <h1>To Do List <br>Advanced</h1>
+            <i class="fa-solid fa-clipboard-list"></i>
+        </header>
+        <form id="todo-form">
+            <p>Adicione a sua tarefa:</p>
+            <div id="--form-control">
+                <input type="text" name="" id="todo-input" placeholder="O que você vai fazer?">
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edite suas tarefas:</p>
+            <div id="--form-control">
+                <input type="text" name="" id="edit-input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="--cancel-edit-btn">Cancelar</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" name="" id="search-input" placeholder="Buscar">
+                    <button id="erase-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select name="" id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <!-- tasks geradas pelo js -->
+        </div>
+    </div>
+</body>
+
+</html>

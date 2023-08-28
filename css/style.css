@@ -1,0 +1,186 @@
+/* Conf. Global */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font-family: 'Lato';
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    --color-bg:#212529;
+    --color-bg-second:#93a8ac; 
+    --color-btn-bg:#415a77;
+    --color-btn-bg-second:#1b263b;
+    --color-white:#fff;
+    --color-white-second: #e0e1dd;
+    --color-gray:#ccc;
+    --color-text-dark: #333;
+    --color-text-red:#d1495b;
+}
+body{
+    background-color: var(--color-bg);
+    color: var(--color-text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+button{
+    background-color: var(--color-white-second);
+    color: var(--color-bg);
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 4.s;
+}
+button:hover{
+    background-color: var(--color-btn-bg);
+    color: var(--color-white-second);
+}
+button:hover > i {
+    color: var(--color-white);
+}
+button i{
+    color: var(--color-btn-bg-second);
+    font-weight: bold;
+    pointer-events: none;
+}
+input, select{
+    padding: .25rem .5rem;
+}
+.hide{
+    display: none;
+}
+
+/* HEADER */
+
+.--container{
+    background-color: var(--color-bg-second);
+    max-width: 480px;
+    margin: 3rem auto ;
+    padding: 2rem;
+    border-radius: 8px;
+    opacity: .8;
+}
+.--container header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem 1.5rem;
+    border-bottom: 1px solid var(--color-gray);
+}
+.--container header i{
+    font-size: 2.5rem;
+    margin: .8rem 0 .8rem 0;
+}
+.--container header h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* FORMULÁRIOS To-do-List */
+#todo-form,
+#edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-gray);
+}
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+#--form-control{
+    display: flex;
+}
+#--form-control input{
+    margin-right: .3rem;
+}
+#--cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+/* TOOLBAR */
+
+#toolbar{
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-gray);
+}
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+#search{
+    width: 65%;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--color-gray);
+}
+#search form{
+    display: flex;
+}
+#search input{
+    width: 100%;
+    margin-right: .3rem;
+}
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* To-do-list */
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-gray);
+    transition: .3s;
+}
+.todo h3{
+    flex: 1;
+    font-size: .9rem;
+}
+.todo button{
+    margin-left: .4rem;
+}
+.done{
+    background-color: var(--color-gray);
+}
+.done h3{
+    color: var(--color-text-red);
+    font-style: italic;
+    text-decoration: line-through;   
+}

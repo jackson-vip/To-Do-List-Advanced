@@ -1,0 +1,61 @@
+/* Family Lato */
+@font-face {
+    font-family: 'Lato';
+    src: url('./Lato/Lato-Regular.ttf') format(woff2);
+}
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('./Lato/Lato-Black.ttf');
+}
+@font-face {
+    font-family:'Lato-BlackItalic' ;
+    src: url('./Lato/Lato-BlackItalic.ttf');
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('./Lato/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: 'Lato-BoldItalic';
+    src: url('./Lato/Lato-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url('./Lato/Lato-Italic.ttf');
+}
+@font-face {
+    font-family: 'Lato-LightItalic';
+    src: url('./Lato/Lato-LightItalic.ttf');
+}
+
+/* Family Nanum_Myeongjo */
+@font-face {
+    font-family: 'Nanum_Myeongjo';
+    src: url('./Nanum_Myeongjo/NanumMyeongjo-Regular.ttf') format(woff2);
+}
+@font-face {
+    font-family: 'NanumMyeongjo-Bold';
+    src: url('./Nanum_Myeongjo/NanumMyeongjo-Bold.ttf');
+}
+@font-face {
+    font-family: 'NanumMyeongjo-ExtraBold';
+    src: url('./Nanum_Myeongjo/NanumMyeongjo-ExtraBold.ttf');
+}
+
+/* Family Roboto */
+@font-face {
+    font-family:'Roboto' ;
+    src: url('./Roboto/Roboto-Regular.ttf') format(woff2);
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(./Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./Roboto/Roboto-Regular.ttf');
+}
